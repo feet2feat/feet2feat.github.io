@@ -145,10 +145,10 @@
     if (opts.autoplay && !reduceMotion && !saveData && "IntersectionObserver" in window) {
       const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio > 0.35) { if (!userPaused && video.paused) play(); }
+          if (entry.isIntersecting && entry.intersectionRatio > 0.25) { if (!userPaused && video.paused) play(); }
           else if (!video.paused) video.pause();
         });
-      }, { threshold: [0, 0.35, 0.6] });
+      }, { threshold: [0, 0.1, 0.25, 0.4, 0.6, 0.8, 1] });
       io.observe(stage);
     }
     document.addEventListener("visibilitychange", () => { if (document.hidden && !video.paused) video.pause(); });
