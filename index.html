@@ -18,7 +18,7 @@
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/site.css?v=125a10ead4">
+<link rel="stylesheet" href="assets/css/site.css?v=08a836253e">
 </head>
 <body>
 <header>
@@ -84,6 +84,10 @@
     <a href="assets/img/framework.webp"><img src="assets/img/framework.webp" width="2200" height="1032" loading="lazy" alt="Framework: human foot scans are decoded into candidate soles, each represented by 23 contact spheres; three policies are trained on other soles and frozen; every sole is then compared with the stock foot and a flat control under those frozen policies from identical starting states."></a>
   </figure>
   <p>We decode soles from a statistical model of human foot scans and give each one 23 contact spheres on the G1 ankle. We train three PPO policies on seven other soles and a flat control, then freeze them. Every foot is evaluated under these frozen policies from identical starting states, so any difference comes from the foot.</p>
+  <figure>
+    <div class="soles"><div><img src="assets/img/soles/design-00.webp" width="360" height="240" loading="lazy" alt=""><span>Mean foot</span></div><div><img src="assets/img/soles/design-01.webp" width="360" height="240" loading="lazy" alt=""><span>Scan 1</span></div><div><img src="assets/img/soles/design-02.webp" width="360" height="240" loading="lazy" alt=""><span>Scan 2</span></div><div><img src="assets/img/soles/design-03.webp" width="360" height="240" loading="lazy" alt=""><span>Scan 3</span></div><div><img src="assets/img/soles/design-04.webp" width="360" height="240" loading="lazy" alt=""><span>Scan 4</span></div><div><img src="assets/img/soles/design-05.webp" width="360" height="240" loading="lazy" alt=""><span>Scan 5</span></div><div class="selected"><img src="assets/img/soles/design-06.webp" width="360" height="240" loading="lazy" alt=""><span>Scan 6 (selected)</span></div><div><img src="assets/img/soles/design-07.webp" width="360" height="240" loading="lazy" alt=""><span>Scan 7</span></div><div><img src="assets/img/soles/design-08.webp" width="360" height="240" loading="lazy" alt=""><span>Toe splay −3σ</span></div><div><img src="assets/img/soles/design-09.webp" width="360" height="240" loading="lazy" alt=""><span>Toe splay −1.5σ</span></div><div><img src="assets/img/soles/design-10.webp" width="360" height="240" loading="lazy" alt=""><span>Toe splay +1.5σ</span></div><div><img src="assets/img/soles/design-11.webp" width="360" height="240" loading="lazy" alt=""><span>Toe splay +3σ</span></div><div><img src="assets/img/soles/design-12.webp" width="360" height="240" loading="lazy" alt=""><span>Toe asymmetry −3σ</span></div><div><img src="assets/img/soles/design-13.webp" width="360" height="240" loading="lazy" alt=""><span>Toe asymmetry −1.5σ</span></div><div><img src="assets/img/soles/design-14.webp" width="360" height="240" loading="lazy" alt=""><span>Toe asymmetry +1.5σ</span></div><div><img src="assets/img/soles/design-15.webp" width="360" height="240" loading="lazy" alt=""><span>Toe asymmetry +3σ</span></div><div><img src="assets/img/soles/design-16.webp" width="360" height="240" loading="lazy" alt=""><span>Arch height −1.5σ</span></div><div><img src="assets/img/soles/design-17.webp" width="360" height="240" loading="lazy" alt=""><span>Arch height +1.5σ</span></div><div><img src="assets/img/soles/design-18.webp" width="360" height="240" loading="lazy" alt=""><span>Forefoot width −1.5σ</span></div><div><img src="assets/img/soles/design-19.webp" width="360" height="240" loading="lazy" alt=""><span>Forefoot width +1.5σ</span></div><div><img src="assets/img/soles/design-20.webp" width="360" height="240" loading="lazy" alt=""><span>Flexible flat foot</span></div><div><img src="assets/img/soles/design-21.webp" width="360" height="240" loading="lazy" alt=""><span>High-arched foot</span></div><div><img src="assets/img/soles/design-22.webp" width="360" height="240" loading="lazy" alt=""><span>Wide forefoot, long hallux</span></div><i class="break"></i><div><img src="assets/img/soles/flat-control.webp" width="360" height="240" loading="lazy" alt=""><span>Flat control</span></div><div><img src="assets/img/soles/stock.webp" width="360" height="240" loading="lazy" alt=""><span>Stock G1 foot</span></div></div>
+    <figcaption>The 23 soles in the design grid, the flat control (same spheres, shoe outline) and the stock foot, seen from below.</figcaption>
+  </figure>
 </section>
 
 <section>
@@ -119,6 +123,6 @@
 </section>
 </main>
 
-<script src="assets/js/site.js?v=125a10ead4" defer></script>
+<script src="assets/js/site.js?v=08a836253e" defer></script>
 </body>
 </html>
