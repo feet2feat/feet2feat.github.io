@@ -21,12 +21,13 @@
     if (!still && !held.has(v)) v.play().catch(() => {});
   };
   if (!("IntersectionObserver" in window)) { videos.forEach(show); return; }
+  // A clip loads and plays once a quarter of it is in view, so fewer clips share a slow connection.
   const seen = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
       const v = e.target;
-      if (e.isIntersecting) { onScreen.add(v); show(v); }
+      if (e.isIntersecting && e.intersectionRatio >= 0.25) { onScreen.add(v); show(v); }
       else { onScreen.delete(v); if (v.getAttribute("src")) v.pause(); }
     });
-  }, { rootMargin: "200px 0px" });
+  }, { threshold: [0, 0.25] });
   videos.forEach((v) => seen.observe(v));
 })();
